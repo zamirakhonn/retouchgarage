@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- meta -->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="author" content="Bilol Tuliboev" />
+	<meta name="robots" content="index, follow, noodp" />
+	<meta name="googlebot" content="index, follow" />
+	<meta name="google" content="notranslate" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+	<!-- CDN aos -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+	<!-- CDN owl -->
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+	<!-- CDN boxicons -->
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+
+	<!-- css -->
+	<link rel="stylesheet" href="assets/css/style.css" />
+
+	<script src="smtp.js"></script>
+	<script src="index.js"></script>
+
+	<!-- title -->
+	<title>RetouchGarage | Work Samples</title>
+</head>
+
+<body>
+	<div class="page">
+		<!-- modal -->
+		<div class="modal modal-main">
+			<div class="modal__box">
+				<h1>Contact us</h1>
+				<form action="#" class="modal__form">
+					<label for="contact_us_name">
+						<span>(Company) Name</span>
+						<input type="text" id="contact_us_name" />
+						<i class="bx bxs-user"></i>
+					</label>
+					<label for="contact_us_email">
+						<span>E-mail</span>
+						<input type="email" id="contact_us_email" title="Please enter your email address"
+							oninvalid="InvalidMsg(this);" oninput="InvalidMsg(this);" required />
+						<i class="bx bxs-envelope"></i>
+					</label>
+					<label for="message">
+						<span>Message</span>
+						<textarea name="" id="contact_us_message" cols="30" rows="5"></textarea>
+					</label>
+					<span id="em" style="display: none;">Email must be provided.</span>
+					<button id="contact_us_send">Send and get a quick response</button>
+				</form>
+				<i class="bx bx-x"></i>
+			</div>
+		</div>
+
+		<div class="modal modal-upload">
+			<div class="modal__box">
+				<h1>Contact us</h1>
+				<form action="#" class="modal__form">
+					<label for="contact_us_2_email">
+						<span>E-mail</span>
+						<input type="email" id="contact_us_2_email" title="Please enter your email address"
+							oninvalid="InvalidMsg(this);" oninput="InvalidMsg(this);" required />
+						<i class="bx bxs-envelope"></i>
+					</label>
+					<label for="contact_us_2_upload">
+						<span id="upt">Upload a photo</span>
+						<span id="fch" style="display: none;">File chosen: <span id="fn"></span></span>
+						<input type="file" name="" id="contact_us_2_upload" style="display: none" />
+						<img src="assets/img/upload.svg" alt="" id="pls-img" />
+					</label>
+					<span id="em2" style="display: none;">Email must be provided.</span>
+					<button id="contact_us_2_send">Send and get a quick response</button>
+				</form>
+				<i class="bx bx-x"></i>
+			</div>
+		</div>
+
+		<div class="modal modal-success">
+			<div class="modal__box">
+				<img
+					src="https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/100/000000/external-tick-success-flatart-icons-lineal-color-flatarticons-1.png" />
+				<div class="modal__content">
+					<h1>Success</h1>
+					<p>Explore out other services, thank you!</p>
+					<a href="/index" class="btn">Home page</a>
+				</div>
+				<i class="bx bx-x"></i>
+			</div>
+		</div>
+
+		<!-- header -->
+		<header class="header" data-aos="fade-down">
+			<div class="container">
+				<div class="header__inner">
+					<a href="/index">
+						<img src="assets/img/logo.svg" alt="" />
+					</a>
+					<nav>
+						<a href="/works">Our works</a>
+						<a href="/pricing">Pricing</a>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<!-- body -->
+
+		<!-- works -->
+		<section class="works">
+			<div class="container">
+				<h1 class="title" data-aos="zoom-in-up">
+					<span>Our work samples</span><img src="assets/img/stars.svg" alt="" />
+				</h1>
+				<div class="works__inner">
+					<div class="works__item" data-aos="zoom-out-up">
+						<div class="works__box">
+							<div class="works__modified" style="background-image: url('assets/img/sample-1-2.jpg')">
+							</div>
+							<div class="resizer" id="resizer"></div>
+							<img src="assets/img/sample-1-1.jpg" />
+						</div>
+					</div>
+
+					<div class="works__item" data-aos="zoom-out-up">
+						<div class="works__box">
+							<div class="works__modified" style="background-image: url('assets/img/sample-2-2.jpg')">
+							</div>
+							<div class="resizer" id="resizer"></div>
+							<img src="assets/img/sample-2-1.jpg" />
+						</div>
+					</div>
+
+					<div class="works__item" data-aos="zoom-out-up">
+						<div class="works__box">
+							<div class="works__modified" style="background-image: url('assets/img/sample-3-2.jpg')">
+							</div>
+							<div class="resizer" id="resizer"></div>
+							<img src="assets/img/sample-3-1.jpg" />
+						</div>
+					</div>
+
+					<div class="works__item" data-aos="zoom-out-up">
+						<div class="works__box">
+							<div class="works__modified" style="background-image: url('assets/img/sample-4-2.jpg')">
+							</div>
+							<div class="resizer" id="resizer"></div>
+							<img src="assets/img/sample-4-1.jpg" />
+						</div>
+					</div>
+
+					<div class="works__item" data-aos="zoom-out-up">
+						<div class="works__box">
+							<div class="works__modified" style="background-image: url('assets/img/sample-5-2.jpg')">
+							</div>
+							<div class="resizer" id="resizer"></div>
+							<img src="assets/img/sample-5-1.jpg" />
+						</div>
+					</div>
+
+					<div class="works__item" data-aos="zoom-out-up">
+						<div class="works__box">
+							<div class="works__modified" style="background-image: url('assets/img/sample-6-2.jpg')">
+							</div>
+							<div class="resizer" id="resizer"></div>
+							<img src="assets/img/sample-6-1.jpg" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- bottom -->
+		<section class="bottom">
+			<div class="container">
+				<div class="bottom__inner">
+					<div class="bottom__photo" data-aos="zoom-out-right">
+						<img src="assets/img/man.png" alt="" />
+					</div>
+					<div class="bottom__content" data-aos="fade-up-left">
+						<h1>
+							More than 50 specialists taking care of your images in our office
+							facilities and getting them ready within 24 hours
+						</h1>
+						<div class="bottom__btns">
+							<a href="#" class="btn" data-modal="main">Get a Quote</a>
+							<a href="/pricing" class="btn transparent"><span>Check the prices</span><i
+									class="bx bx-right-arrow-alt"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner" data-aos="zoom-in">
+					<div class="footer__col footer__col-logo">
+						<img src="assets/img/logo-footer.svg" alt="" />
+					</div>
+					<div class="footer__col footer__col-list">
+						<ul>
+							<li><a href="/works">Our work</a></li>
+							<li><a href="/pricing">Pricing</a></li>
+						</ul>
+					</div>
+					<div class="footer__col footer__col-social">
+						<ul class="footer__social">
+							<!--	<li><a href="/pricing">Pricing</a></li> -->
+							<li class="footer__social-li">
+								<a href="https://www.linkedin.com/company/retouchgarage" target="_blank"><i
+										class="bx bxl-linkedin"></i></a>
+								<a href="https://www.instagram.com/retouchgarage/" target="_blank"><i
+										class="bx bxl-instagram"></i></a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__col footer__col-btn">
+						<a href="#" class="btn" data-modal="main">Get a Quote</a>
+					</div>
+				</div>
+				<div class="footer__copy">
+					<p>© 2021 RetouchGarage. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- scripts -->
+	<!-- CDN jquery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!-- CDN owl -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+	<!-- CDN aos -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+	<!-- CDN boxicons -->
+	<script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+
+	<script src="assets/js/app.js"></script>
+
+	<script src="extra.js"></script>
+</body>
+
+</html>
